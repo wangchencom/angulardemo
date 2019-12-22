@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <app-tou></app-tou>
+    <div class="row">
+        <app-menu></app-menu>
+        <div class="col-md-10 zhuti">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">添加学生信息</h4>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>编号</th><th>姓名</th><th>性别</th>
+                                <th>年龄</th><th>班级</th><th>地址</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr *ngFor="let stu of stuList">
+                                        <th>{{stu.stuId}}</th> <th>{{stu.stuName}}</th> <th>{{stu.stuSex}}</th>
+                                        <th>{{stu.stuAge}}</th> <th>{{stu.stuClass}}</th> <th>{{stu.stuAddress}}</th>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

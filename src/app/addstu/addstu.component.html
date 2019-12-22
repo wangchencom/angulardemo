@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <app-tou></app-tou>
+    <div class="row">
+        <app-menu></app-menu>
+        <div class="col-md-10"> 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">添加学生信息</h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" #f="ngForm" (ngSubmit)="add(f.value)">
+                        <div class="form-group">
+                            <label class="col-md-2 text-right">姓名：</label>
+                            <div class="col-md-8">
+                                <input type="text" name="stuName" ngModel class="form-control" placeholder="请输入姓名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 text-right">密码：</label> 
+                            <div class="col-md-8">
+                                <input type="password" name="stuPassword" ngModel class="form-control" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 text-right">性别：</label>
+                            <div class="col-md-8">
+                               <input type="radio" value="1" name="stuSex" ngModel>男
+                               <input type="radio" value="2" name="stuSex" ngModel>女
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 text-right">年龄：</label>
+                            <div class="col-md-8">
+                                <input type="text" name="stuAge" ngModel class="form-control" placeholder="请输入年龄">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 text-right">班级：</label>
+                            <div class="col-md-8">
+                               <select name="stuClass" ngModel class="form-control">
+                                   <option value="1">软件1班</option>
+                                   <option value="2">软件2班</option>
+                                   <option value="3">软件3班</option>
+                                   <option value="4">软件4班</option>
+                               </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 text-right">地址：</label>
+                            <div class="col-md-8">
+                                <input type="text" name="stuAddress" ngModel class="form-control" placeholder="请输入地址">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-2">
+                                <input type="submit" value="添加" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

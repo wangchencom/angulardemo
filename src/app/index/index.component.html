@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <app-tou></app-tou>
+    <div class="row">
+        <app-menu></app-menu>
+        <div class="col-md-10 zhuti">
+           {{ab}} {{aa}} {{bb}} {{cc}}
+           <br/>
+           <img [src]='imgs' alt="hua"><br/>
+           <input type="text" [value] = 'aa' /><br/>
+           <input type="text"  [style.background-color] = 'color' /><br/>
+           <input type="text"  [class.back] = 'change' /><br />
+           <input type="button" (click) = "ch()" value="点击"><br/>
+           <input type="button" value="点我试试" (click)="cca($event)" />
+           <br />
+           {{per |percent}}
+           <br>
+           {{today | date: 'yyyy-MM-dd hh:mm:ss'}}
+           <br>
+           {{salary | currency: 'CNY':'symbol-narrow'}}
+           <!-- {{per |percent}}
+           {{ today | date: ‘yyyy-MM-dd hh:mm:ss’}}
+           {{salary | currency: ‘CNY’:‘symbol-narrow’}}  -->
+           {{daaa}}
+        </div>
+    </div>
+  </div>

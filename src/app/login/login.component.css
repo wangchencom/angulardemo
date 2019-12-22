@@ -1,0 +1,9 @@
+.bg{
+    background-color: hsl(202, 72%, 39%);
+    height: 800px;
+    background-image: url("/assets/img/loginbg.png");
+}
+.loginimg{
+    margin-top: 20px;
+
+}

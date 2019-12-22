@@ -1,0 +1,53 @@
+
+<div class="container-fluid bg">
+    <div class = "row ">
+        <div class=" col-md-4  col-md-offset-4 loginimg">
+            <div class="loginimg">
+                <img src="./assets/img/loginlogo.png" alt="">
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">登录面板</div>
+                <div class="panel-body">
+                    <form #f="ngForm" (ngSubmit)="login(f.value)">
+                        <div class="input-group">
+                            <input type="text" name = "username" ngModel class="form-control"  placeholder="请输入用户名" aria-describedby="basic-addon2"  >
+                            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-user"></span></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" name = "password" ngModel class="form-control"  placeholder="请输入密码" aria-describedby="basic-addon2"  >
+                            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div><br/>
+                        <button type="submit" class="btn btn-primary btn-block" href>登录</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="container-fluid bj">
+   <div class="row">
+       <div class="col-md-4 col-md-offset-4">
+           <img class="logo" src="/assets/img/loginlogo.png" alt="">
+           <div class="panel panel-primary">
+               <div class="panel-heading">
+                   <h4 class="panel-title">系统登录</h4>
+               </div>
+               <div class="panel-body">
+                   <form #f="ngForm" (ngSubmit)="login(f.value)">
+                       <div class="form-group">
+                           <label>用户名：</label>
+                           <input type="text" name="unname" ngModel class="form-control">
+                       </div>
+                       <div class="form-group">
+                               <label>密码：</label>
+                               <input  type="password" name="password" ngModel class="form-control" >
+                       </div>
+                       <input type="submit" value="登录" class="btn btn-info btn-block">
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+</div> -->
