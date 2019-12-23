@@ -17,6 +17,7 @@ import { AddstuComponent } from './addstu/addstu.component';
 // httpClinent mod
 import { HttpClientModule } from '@angular/common/http';
 import { ChastuComponent } from './chastu/chastu.component';
+import { MyserveComponent } from './myserve/myserve.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ChastuComponent } from './chastu/chastu.component';
     OneComponent,
     TwoComponent,
     AddstuComponent,
-    ChastuComponent
+    ChastuComponent,
+    MyserveComponent
   ],
   imports: [
     BrowserModule,

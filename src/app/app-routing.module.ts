@@ -6,6 +6,7 @@ import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { AddstuComponent } from './addstu/addstu.component';
 import { ChastuComponent } from './chastu/chastu.component';
+import { MyserveComponent } from './myserve/myserve.component';
 
 const routes: Routes = [
   {path: 'index/:uname', component: IndexComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'two', component: TwoComponent},
   // {path: 'addstu', component: AddstuComponent}
   {path: 'addstus', component: AddstuComponent},
-  {path: 'chastu', component: ChastuComponent}
+  {path: 'chastu', component: ChastuComponent},
+  {path: 'myserve',component: MyserveComponent}
 ];
 
 @NgModule({
